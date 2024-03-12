@@ -26,6 +26,127 @@
 
 
 <body>
+    <script>
+        //javascript, script language, it is easy
+        //Adobe=> Adobe Flash, used to be popular for animation, => ActionScript for AdobeFlash
+        //Two: BScript: Javasceript
+        //Livescript- called before Javascript, company had live and Java then renamed
+        //Java and Javascript are different programming languages
+
+
+        //JavaScript is not type safe-  can define variable without specifying datatype, less efficent bc less rules
+        //C# Java is type safe- you have to define datatypes
+
+        //JavaScript (web page)
+        //Can also connect to a DB and run outside a web page
+
+
+        //Defining variables
+        "use strict"; //ask JS to behave like a C# or Java so it will tell us what is wrong
+        const a1 = 20; //local integer
+        let a2; //let is the keyword to define a local variable
+        //a2 undefined
+        let a3;//undefined, local
+        a2 = 19;//int
+        var a4; //global can be used anywhere in the webpage, type undefined
+        a4 = 128.8;// a4 is now a double
+
+       // alert(a4); //shows variable on webpage in webbroowser message
+       // alert(a3); 
+        {//walls, booundary of a world, scope, block
+            let b1;//undefined, local variable
+            b1 = "Tom";//string
+            console.log(b1);
+
+            var b2;//global
+            b2 = 100;
+        }
+
+
+    </script>
+
+    <script>
+        "use strict";
+       // alert(a4);
+        console.log(a4);
+       // console.log(b1); can print bc b1 is local 
+        console.log(b2);
+
+        //string 
+        let s1;//local variable but scope is whole webp go acts like global var
+        s1 = 100;//valid
+        s1 = "Tom"; //string
+        s1 = 'string_'; //cannot define type char, " " or '' if string
+
+        let age1;
+        age1 = 20;
+        let name1 = 'Tommy';
+
+        let s2;
+        s2 = `the name is ${name1} the age is ${age1} `;//string
+        console.log(s2);
+        //html css (not programming because no eval stmt or loops)
+        //JavaScript
+        //use let 90% or more or occasionally use var
+        //use `` to declare string and add var w/ ${} inside `s
+
+        let stu1 = {
+
+            age: 19,
+            name: 'Ronny',
+            grade: 90,
+            weight: 129,
+
+
+        }; //object, dictionary
+
+        console.log(stu1.weight);
+
+        //array, list, map()
+
+        let arr1;
+        arr1 = [20, 19, 22];
+        console.log(arr1.length);
+        console.log(arr1[1]);
+
+        //how to define functions in JS
+        //way1
+        function func1(p1,p2)
+        {
+            return p1 + p2;
+           
+        }
+
+        let r1 = func1(2.3, 3.6);
+        console.log(r1);
+
+        let fc1;//undefined
+        fc1 = func1;
+        r1 = fc1(2, 3);
+        console.log(r1);
+
+        //way2 to define a function
+        //arrow function
+
+        let fc2; //undefined
+        //in JS ; is not mandatory but is good practice
+        fc2 = (p1, p2) => { return p1 * p2 };
+        r1 = fc2(2, 3);
+        console.log(r1); //returns 6 in console
+
+        arr1 = [20, 19, 22]; //array
+        //map()
+        //results in a new array, you will need to provide a lambda funct as parameter
+        
+        arr2 = arr1.map((x) => { return x * 2; });
+        //arr2=[array w 40,38,44], dooes not change the org array
+        //creates new array
+
+
+    </script>
+
+
+
     <div id="div1"></div>
     <img id="img1"src="head1.png"/>
     <img id="img2"src="b.svg"/>
