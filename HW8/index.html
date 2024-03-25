@@ -22,22 +22,32 @@
         align-content:center;
     
     }
-    #logos{
-        display:flex;
-        flex-direction:row;
+    #logos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+       
+        
     }
     #Bio{
         
         width:800px;
       
     }
-    #News{
+    #News {
         background-color: #ededed;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
     }
-    #End{
-        background-color: #faf7f7f;
-        text-align:center;
-        color:dimgrey;
+    #End {
+        background-color: #faf7f7;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: dimgrey;
     }
 </style>
 
@@ -51,16 +61,26 @@
 
 
         <div id="div2" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <img src="head2.png" style="width:200px; border-radius:50%;" />
+            <img src="static/head2.png" style="width:200px; border-radius:50%;" />
             <div style="font-size:30pt;">Izzy Deller</div>
             <div style="font-size:20pt; color:dimgray;">Student in Management Information Systems <br> The University of Oklahoma</div>
         
 
             <div id="logos">
-                <!--finish logos-->
-                <a href="_blank">
-                    <img src="email.png" style="align-content:center"/>
+                <a href="izzydeller@ou.edu" target="_blank">
+               <img src="static/email.png" style="width:30px;"/>
+               </a>
+
+                <a href="https://www.linkedin.com/" target="_blank">
+                <img src="static/linkedin.png" style="width:30px;"/>
                 </a>
+                <a href="https://twitter.com/" target="_blank">
+                <img src="static/twitter.png" style="width:30px;"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                <img src="static/instagram.png" style="width:30px;"/>
+                </a>
+
             </div>
         </div>
 
@@ -103,11 +123,12 @@
         </div>
 </div>
         <div id="News">
-            <div style="font-weight:bold; font-size:30px;">Recent News</div>
+            <div style="font-weight:bold; font-size:30px; ;">Recent News</div>
             <ul>
                 <li>Learning C# Web Application Design</li>
                 <li>Learning C# WPF</li>
             </ul>
+
         </div>
 
         <div id="End">
